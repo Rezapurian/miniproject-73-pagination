@@ -1,0 +1,71 @@
+@font-face {
+    font-family: vazir;
+    src: url(/font/Vazir-Regular.woff) format("woff");
+}
+*{
+    font-family: vazir;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: linear-gradient(45deg, #410358, #4700bc);
+  user-select: none;
+}
+.container {
+  width: 50%;
+}
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  color: #383838;
+  padding: 10px 40px;
+  border-radius: 6px;
+}
+.links {
+  margin: 20px 30px;
+}
+.links a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #383838;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  text-decoration: none;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 45px;
+  cursor: pointer;
+  transition: background .8s;
+}
+.links a:hover {
+  color: #fff;
+  background: linear-gradient(#ff4568, #ff4568);
+}
+a.active {
+  color: #fff;
+  background: linear-gradient(#ff4568, #ff4568);
+}
+.btn1, .btn2 {
+  display: inline-flex;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 500;
+  color: #383838;
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.btn1, .btn2, i {
+  margin: 0 8px 0 8px;
+} 
